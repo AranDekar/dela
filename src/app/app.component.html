@@ -1,20 +1,397 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<div class="header-top" id="home">
+  <div class="navbar-wrapper">
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+            aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="logo">
+            <a class="navbar-brand" href="index.html">Dela</a>
+          </div>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav nav-floats1">
+            <li>
+              <a href="#about" class="scroll">About</a>
+            </li>
+            <li>
+              <a href="#videos" class="scroll">Videos</a>
+            </li>
+            <li>
+              <a href="#events" class="scroll">Events</a>
+            </li>
+            <li>
+              <a href="#contact" class="scroll">Contact</a>
+            </li>
+          </ul>
+          <ul class="social nav-floats2">
+            <li>
+              <a href="#" class="face"></a>
+            </li>
+            <li>
+              <a href="#" class="twit"></a>
+            </li>
+            <li>
+              <a href="#" class="gpls"></a>
+            </li>
+            <li>
+              <a href="#" class="inst"></a>
+            </li>
+          </ul>
+          <ul class="form_acess nav-floats2">
+            <form class="re-disgn1">
+              <input type="text" name="s" class="textbox" value="Search.." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search...';}">
+              <input type="submit" value="" class="sub">
+            </form>
+          </ul>
+          <div class="clearfix"></div>
+        </div>
+        <!-- /.navbar-collapse -->
+        <div class="clearfix"></div>
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+  </div>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<div class="header-bottom">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
 
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="../assets/images/bn-1.jpeg" alt="First slide" class="img-wid" />
+      </div>
+
+      <div class="item">
+        <img src="../assets/images/bn-2.jpeg" alt="Second slide" class="img-wid" />
+      </div>
+
+      <div class="item">
+        <img src="../assets/images/bn-3.jpeg" alt="Third slide" class="img-wid" />
+      </div>
+      <div class="item">
+        <img src="../assets/images/bn-4.jpeg" alt="Forth slide" class="img-wid" />
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<div class="our-partners" id='about'>
+  <div class="container">
+    <h3>About us</h3>
+    <div class="row featurette">
+      <div class="col-md-7 txt-sty1 flot-stn3">
+        <h2 class="featurette-heading">Dela Ensemble.
+          <span class="text-muted">April 2014</span>
+        </h2>
+        <p class="lead">Dela ensemble is an iranian classical music band which was funded some years ago and is trying to perform and compose
+          iranian music, the forms this ensemble works are classical, traditional, folk and fusion, please find below the
+          biography of the members.</p>
+      </div>
+      <div class="col-md-5 flot-stn3">
+        <img class="featurette-image img-responsive center-block" src="../assets/images/bn-1.jpeg" alt="Generic placeholder image">
+      </div>
+      <div class="clearfix"></div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 col-md-push-5 txt-sty2 flot-stn4">
+        <h2 class="featurette-heading">Ali Tahamtan.
+        </h2>
+        <p class="lead">Ali was born in 1981 in a family whose mother was an Iranian classical music singer. He Started His music from the
+          age of 10 performing with a group of other kids in a local TV channel in Iran playing keyboard and piano. Later
+          on at the age of 15 his passion in music moved toward Iranian music and started playing Tar, one of the most famous
+          traditional instruments in Iran since then. Ali had the opportunity to learn from famous masters such as Rahim
+          Fathali zadeh, Navid Afghah and Keivan Saket who is prominent for Technique and music knowledge. Ali has performed
+          in several national and international festivals and alongside with other members of DELA ensemble desire to represent
+          Iranian music culture to interact with other International audiences and music trends.</p>
+      </div>
+      <div class="col-md-5 col-md-pull-7 flot-stn4">
+        <img class="featurette-image img-responsive center-block" src="../assets/images/ali-bio.jpg" alt="Generic placeholder image">
+      </div>
+      <div class="clearfix"></div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 col-md-push-5 txt-sty2 flot-stn4">
+        <h2 class="featurette-heading">Ashkan Ghaffari.
+        </h2>
+        <p class="lead">
+          Born in 1983 in Tehran Iran, Ashkan Ghaffari’ s music talent first discovered while he was 5. He showed a lot of interest
+          in rhythm and music especially a traditional Persian instrument called Tombak also called Zarb where he started
+          his training with Mastro Helmi. He also had the opportunity to be the student of Siamak banaie, one of the best
+          teachers trained by mastro Mohammad Esmaïli. To date, training the traditional Tombak lessons to the younger generation,
+          beside his professional career, he managed to perform in some Iranians and Australian festivals i.e. Sydney’s harmony
+          day.
+        </p>
+      </div>
+      <div class="col-md-5 col-md-pull-7 flot-stn4">
+        <img class="featurette-image img-responsive center-block" src="../assets/images/ashkan-bio.jpg" alt="Generic placeholder image">
+      </div>
+      <div class="clearfix"></div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 col-md-push-5 txt-sty2 flot-stn4">
+        <h2 class="featurette-heading">Aran Dekar.
+        </h2>
+        <p class="lead">
+          Aran is a contemporary musician and composer, he has been playing the Tar and the Setar, two of the most famous traditional
+          instruments in Iran for more than 20 years now, he started his journey in music in 1997, by learning the Radif
+          from his tutor Master “Ataa Jangook” one of the greatest Tar instrumentalists in Iran, he started learning the
+          techniques of the Tar from his Master Mr Keivan Saket (https://en.wikipedia.org/wiki/Keivan_Saket) . He involved
+          in festivals such as Bellingen and Harmony Day festival. He managed a concert in Sydney in 2015 performing along
+          with his maestro Mr Keivan Saket in the ensemble. His plan along with other artists in the “Dela” ensemble is to
+          compose new contemporary music parts and perform great concerts in Australia.</p>
+      </div>
+      <div class="col-md-5 col-md-pull-7 flot-stn4">
+        <img class="featurette-image img-responsive center-block" src="../assets/images/aran-bio.jpg" alt="Generic placeholder image">
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 col-md-push-5 txt-sty2 flot-stn4">
+        <h2 class="featurette-heading">Mehdi Mansouri.
+        </h2>
+        <p class="lead">Born 1980, Tehran Iran. Started Setar classes with Mastero Davood Azad in 1996 and contained learning from other
+          great musicians till today. During these years started self learning Daf and Tanbour and completed several courses
+          in Daf with Amin Dadvari, Yavar Ahmadi far and Tanbour with Arash Shahriari and Sadegh Mahdavi. Still attending
+          Setar and Vocal master classes with Master Sadegh Mahdavi. Before Moving to Australia had several performances
+          as Setar player and back vocalist with Sarv Ensemble in Iran. Album of these concerts is going to be published
+          shortly.
+        </p>
+      </div>
+      <div class="col-md-5 col-md-pull-7 flot-stn4">
+        <img class="featurette-image img-responsive center-block" src="../assets/images/mehdi-bio.jpg" alt="Generic placeholder image">
+      </div>
+      <div class="clearfix"></div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 col-md-push-5 txt-sty2 flot-stn4">
+        <h2 class="featurette-heading">Sina Arbabzadeh.
+        </h2>
+        <p class="lead">Sina is a Santur instrumentalist and one of Dela Ensemble’s members and co-founders in Sydney, Australia. Born in
+          1981 in Shiraz, Iran, he became interested in music from early ages and began learning Santur at the age of 9 by
+          attending Master Babaei’s Santur lessons in Isfahan where he grew his talent for music until age of 19. He studied
+          Radif at the same time with his tutor and accomplished Maestro Abolhasan Saba’s Radif successfully. He moved to
+          Australia in 2011 and along his professional career as a Civil Engineer and his another passion for photography,
+          he strived to continue his music by collaborating with other musicians locally and internationally. His turning
+          point as a musician was when he performed along Maestro Keivan Saket (One of the greatest Tar instrumentalist and
+          composers in Iran) as part of Saket Ensembel Concert in Sydney, 2014. He aims to develop his technics in playing
+          Santur (i.e. his main instrument) and Tanboor (i.e. his secondary instrument), and also learn and practice composing
+          technics.
+        </p>
+      </div>
+      <div class="col-md-5 col-md-pull-7 flot-stn4">
+        <img class="featurette-image img-responsive center-block" src="../assets/images/sina-bio.jpeg" alt="Generic placeholder image">
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 col-md-push-5 txt-sty2 flot-stn4">
+        <h2 class="featurette-heading">Nadia Dardashti.
+        </h2>
+        <p class="lead">was born in Tehran, Iran into a musically spirited family. Growing up the sound of maestro Younes Dardashti her second
+          cousin, filled the air in awe of her youthful soul. Leaving her beloved country in despair at a young age after
+          the revolution, left her with the yearning to pursue her passion for singing. The passion that remained unleashed
+          until many years later, initially in USA and later on in Sydney, Australia where she resides presently. Nadia has
+          studied the fundamentals of Persian classical music from Master composer Siamak Farokhsereshti at Madakto art centre,
+          and Master Sadegh Mahdavi. Nadia has had performances in USA and Australia, and has been the Vocalist for Dela
+          Ensemble since 2015.
+        </p>
+      </div>
+      <div class="col-md-5 col-md-pull-7 flot-stn4">
+        <img class="featurette-image img-responsive center-block" src="../assets/images/nadia-bio-color.jpg" alt="Generic placeholder image">
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 col-md-push-5 txt-sty2 flot-stn4">
+        <h2 class="featurette-heading">Danial Bozorgi.
+        </h2>
+        <p class="lead">Born in 1982, as a Persian classic music vocalist, Danial Bozorgi's musical gift was first nurtured and instructed
+          in a family of talented musicians mostly trained by Mastro Ali Tajvidi. He has been a student of Davood Fayazi,
+          one of the prominent vocalists and teachers trained by Mastro Ismail Mehrtash. To date, inspired by his deep interest
+          in Persian classic music, besides his professional career, he has managed to have performances in a number of international
+          and national festivals and concerts in Iran, Malaysia and Australia. He has also been one of the founding members
+          of Mastoor ensemble in Western Australia.
+        </p>
+      </div>
+      <div class="col-md-5 col-md-pull-7 flot-stn4">
+        <img class="featurette-image img-responsive center-block" src="../assets/images/danial-bio.jpeg" alt="Generic placeholder image">
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 col-md-push-5 txt-sty2 flot-stn4">
+        <h2 class="featurette-heading">Amir Ghadiri.
+        </h2>
+        <p class="lead">Amir Ghadiri (born in 1981 in Tehran, Iran) is an Iranian musician from a musically talented family. His musical
+          journey anticipated when he was 9. His father, an Iranian Santoor player and traditional vocalist, encouraged him
+          to begin studying musical instruments. Amir formally followed his passion for Tombak, a goblet drum from Persia,
+          under the supervision of the legendary Hojat Alborzi, a top student of Maestro Amir Nasser Eftetah. Amir’s talent
+          in learning Tombak and rhythm helped him achieve the professional level at the very young age of 16, enabling him
+          to have his first stage performance at the “Vesal Theatre” as part of the “Nakisa” Ensemble. Amir began to show
+          interest in learning Iranian “Dastgah”s and also string instrument violin in 1995, attending music lessons of Master
+          Davood Ganjei and later on Mohammad Moghaddasi. Amir has always had the passion of passing his knowledge and experience
+          in music to the younger generation and has been successful in training few students during the past 20 years. Since
+          his migration to Australia, Amir’s declared ambition has been familiarising Western culture with the Iranian classical
+          music. For this purpose, he joined Dela Ensemble, a young Iranian band, and still attends the rehearsals for their
+          future public performances.
+        </p>
+      </div>
+      <div class="col-md-5 col-md-pull-7 flot-stn4">
+        <img class="featurette-image img-responsive center-block" src="../assets/images/amir-bio.jpg" alt="Generic placeholder image">
+      </div>
+      <div class="clearfix"></div>
+    </div>
+
+    <hr class="featurette-divider">
+  </div>
+</div>
+
+<div class="features-block" id="events">
+  <div class="container">
+    <h3>Events</h3>
+    <div class="row featurette">
+      <div class="col-md-7 txt-sty1 flot-stn3">
+        <h2 class="featurette-heading">East Meets West Concert.
+          <span class="text-muted">April 2014</span>
+        </h2>
+        <p class="lead">This concert was a persian classical music along with choreography held in UNSW university in clancy auditorium,
+          there were around 600 audiences.</p>
+      </div>
+      <div class="col-md-5 flot-stn3">
+        <img class="featurette-image img-responsive center-block" src="../assets/images/ev1.jpg" alt="Generic placeholder image">
+      </div>
+      <div class="clearfix"></div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 col-md-push-5 txt-sty2 flot-stn4">
+        <h2 class="featurette-heading">Cellebration for new Persian Year.
+          <span class="text-muted">June 2017.</span>
+        </h2>
+        <p class="lead">This was performed for the ......</p>
+      </div>
+      <div class="col-md-5 col-md-pull-7 flot-stn4">
+        <img class="featurette-image img-responsive center-block" src="../assets/images/ev2.jpeg" alt="Generic placeholder image">
+      </div>
+      <div class="clearfix"></div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 txt-sty3 flot-stn5">
+        <h2 class="featurette-heading">Shab-e-yalda (Yalda night).
+          <span class="text-muted">December 2017.</span>
+        </h2>
+        <p class="lead">Shab-e-yalda is the longest night in north hemisphere and Iranians celebrate this night as it is opening to a new
+          season which is spring, Dela performed a classical music there for audiences.</p>
+      </div>
+      <div class="col-md-5 flot-stn5">
+        <img class="featurette-image img-responsive center-block" src="../assets/images/ev1.jpeg" alt="Generic placeholder image">
+      </div>
+      <div class="clearfix"></div>
+    </div>
+
+    <div class="row featurette">
+      <div class="col-md-7 col-md-push-5 txt-sty2 flot-stn4">
+        <h2 class="featurette-heading">Fund raising for Iran's earthquake festival.
+          <span class="text-muted">April 2018.</span>
+        </h2>
+        <p class="lead">This is a festival in which 5 ensemble will perform to raise fund to help restoration of the earthquake hit Iran
+          in late 2017 and left many hopeless and destroyed many lives.</p>
+      </div>
+      <div class="col-md-5 col-md-pull-7 flot-stn4">
+        <img class="featurette-image img-responsive center-block" src="../assets/images/ev4.jpeg" alt="Generic placeholder image">
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</div>
+<div class="videos" id="videos">
+  <div class="container">
+    <h3>Videos</h3>
+
+
+    <div class="col-md-4 ifrm-stng">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ES76LiAFdJk" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="col-md-4 ifrm-stng">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Uq_4yin6yeg?list=UU0sUnwcTGH0NyO0nKpJbEVQ" frameborder="0"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="col-md-4 ifrm-stng">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/3Ynxnkz1btA?list=UU0sUnwcTGH0NyO0nKpJbEVQ" frameborder="0"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="col-md-4 ifrm-stng">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/4VzIaJf-27E" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="col-md-4 ifrm-stng">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/V6SZIBTHFTk" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="col-md-4 ifrm-stng">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Wz69IPdA-yE" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</div>

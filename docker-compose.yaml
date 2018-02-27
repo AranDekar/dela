@@ -1,0 +1,6 @@
+version: "3.5"
+services:
+    ui:
+        build: ./ # specify the directory of the Dockerfile
+        ports:
+            - "3000:3000" #specify ports forewarding
